@@ -1,0 +1,705 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/facebook/css-layout">css-layout (v1.1.1)</a>
+</h1>
+<h4>Reimplementation of CSS layout using pure JavaScript</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.css-layout">module css-layout</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.css-layout">
+            function <span class="apidocSignatureSpan"></span>css-layout
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">css-layout.</span>CSharpTranspiler</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">css-layout.</span>JavaTranspiler</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">css-layout.</span>Layout</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.css-layout.CSharpTranspiler">module css-layout.CSharpTranspiler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.CSharpTranspiler.transpileCConstDefs">
+            function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileCConstDefs
+            <span class="apidocSignatureSpan">(cConstDefs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.CSharpTranspiler.transpileCTestsArray">
+            function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileCTestsArray
+            <span class="apidocSignatureSpan">(allTestsInC)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.CSharpTranspiler.transpileLayoutEngine">
+            function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileLayoutEngine
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.css-layout.JavaTranspiler">module css-layout.JavaTranspiler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.JavaTranspiler.transpileCConstDefs">
+            function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileCConstDefs
+            <span class="apidocSignatureSpan">(cConstDefs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.JavaTranspiler.transpileCTestsArray">
+            function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileCTestsArray
+            <span class="apidocSignatureSpan">(allTestsInC)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.JavaTranspiler.transpileLayoutEngine">
+            function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileLayoutEngine
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.css-layout.Layout">module css-layout.Layout</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.Layout.computeLayout">
+            function <span class="apidocSignatureSpan">css-layout.Layout.</span>computeLayout
+            <span class="apidocSignatureSpan">(node, parentMaxWidth, parentDirection)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.Layout.fillNodes">
+            function <span class="apidocSignatureSpan">css-layout.Layout.</span>fillNodes
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.css-layout.Layout.layoutNodeImpl">
+            function <span class="apidocSignatureSpan">css-layout.Layout.</span>layoutNodeImpl
+            <span class="apidocSignatureSpan">(node, parentMaxWidth, parentDirection)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.css-layout" id="apidoc.module.css-layout">module css-layout</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.css-layout" id="apidoc.element.css-layout.css-layout">
+        function <span class="apidocSignatureSpan"></span>css-layout
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">css-layout = function (node) {
+<span class="apidocCodeCommentSpan">  /*eslint-disable */
+</span>  // disabling ESLint because this code relies on the above include
+  computeLayout.fillNodes(node);
+  computeLayout.computeLayout(node);
+  /*eslint-enable */
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.css-layout.CSharpTranspiler" id="apidoc.module.css-layout.CSharpTranspiler">module css-layout.CSharpTranspiler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.CSharpTranspiler.transpileCConstDefs" id="apidoc.element.css-layout.CSharpTranspiler.transpileCConstDefs">
+        function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileCConstDefs
+        <span class="apidocSignatureSpan">(cConstDefs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileCConstDefs = function (cConstDefs) {
+  return indent(
+    cConstDefs
+      .replace(/#define\s+(\w+)\s+(\"[^\"]+\")/g, 'public static readonly string $1 = $2;')
+      .replace(/#define\s+(\w+)\s+(.+)/g, 'public static readonly float $1 = $2f;'));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileCConstDefs</span>(makeConstDefs()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.transpileCTestsArray
+(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.CSharpTranspiler.transpileCTestsArray" id="apidoc.element.css-layout.CSharpTranspiler.transpileCTestsArray">
+        function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileCTestsArray
+        <span class="apidocSignatureSpan">(allTestsInC)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileCTestsArray = function (allTestsInC) {
+  var allTestsInCSharp = [];
+  for (var i = 0; i &lt; allTestsInC.length; i++) {
+    allTestsInCSharp[i] =
+        '    [Test]\n' +
+        '    public void TestCase' + i + '()\n' +
+        __transpileSingleTestToCSharp(allTestsInC[i]);
+  }
+  return allTestsInCSharp.join('\n\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileCTestsArray</span>(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.CSharpTranspiler.transpileLayoutEngine" id="apidoc.element.css-layout.CSharpTranspiler.transpileLayoutEngine">
+        function <span class="apidocSignatureSpan">css-layout.CSharpTranspiler.</span>transpileLayoutEngine
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileLayoutEngine = function (code) {
+  return indent(
+    __transpileToCSharpCommon(code)
+      .replace(/function\s+layoutNode.*/, '')
+      .replace('node.style.measure', 'node.measure')
+      .replace(/\.children\.length/g, '.getChildCount()')
+      .replace(/node.children\[i\]/g, 'node.getChildAt(i)')
+      .replace(/node.children\[ii\]/g, 'node.getChildAt(ii)')
+      .replace(/fmaxf/g, 'Math.Max')
+      .replace(/\/\*\([^\/]+\*\/\n/g, '') // remove comments for other languages
+      .replace(/var\/\*([^\/]+)\*\//g, '$1')
+      .replace(/ === /g, ' == ')
+      .replace(/ !== /g, ' != ')
+      .replace(/\n {2}/g, '\n')
+      .replace(/\/[*]!([^*]+)[*]\//g, '$1')
+      .replace(/css_node_t\*/g, 'CSSNode'));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileLayoutEngine</span>(computeLayout.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.transpileCTestsArray
+(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.css-layout.JavaTranspiler" id="apidoc.module.css-layout.JavaTranspiler">module css-layout.JavaTranspiler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.JavaTranspiler.transpileCConstDefs" id="apidoc.element.css-layout.JavaTranspiler.transpileCConstDefs">
+        function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileCConstDefs
+        <span class="apidocSignatureSpan">(cConstDefs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileCConstDefs = function (cConstDefs) {
+  return indent(
+    cConstDefs
+      .replace(/#define\s+(\w+)\s+(\"[^\"]+\")/g, 'public static final String $1 = $2;')
+      .replace(/#define\s+(\w+)\s+(.+)/g, 'public static final float $1 = $2f;'));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileCConstDefs</span>(makeConstDefs()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.transpileCTestsArray
+(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.JavaTranspiler.transpileCTestsArray" id="apidoc.element.css-layout.JavaTranspiler.transpileCTestsArray">
+        function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileCTestsArray
+        <span class="apidocSignatureSpan">(allTestsInC)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileCTestsArray = function (allTestsInC) {
+  var allTestsInJava = [];
+  for (var i = 0; i &lt; allTestsInC.length; i++) {
+    allTestsInJava[i] =
+        '  @Test\n' +
+        '  public void testCase' + i + '()\n' +
+        __transpileSingleTestToJava(allTestsInC[i]);
+  }
+  return allTestsInJava.join('\n\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileCTestsArray</span>(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.JavaTranspiler.transpileLayoutEngine" id="apidoc.element.css-layout.JavaTranspiler.transpileLayoutEngine">
+        function <span class="apidocSignatureSpan">css-layout.JavaTranspiler.</span>transpileLayoutEngine
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transpileLayoutEngine = function (code) {
+  return indent(
+    __transpileToJavaCommon(code)
+      .replace(/function\s+layoutNode.*/, '')
+      .replace('node.style.measure', 'node.measure')
+      .replace(/\.children\.length/g, '.getChildCount()')
+      .replace(/node.children\[i\]/g, 'node.getChildAt(i)')
+      .replace(/node.children\[ii\]/g, 'node.getChildAt(ii)')
+      .replace(/fmaxf/g, 'Math.max')
+      .replace(/\/\*\([^\/]+\*\/\n/g, '') // remove comments for other languages
+      .replace(/var\/\*([^\/]+)\*\//g, '$1')
+      .replace(/ === /g, ' == ')
+      .replace(/ !== /g, ' != ')
+      .replace(/\n {2}/g, '\n')
+      .replace(/\/[*]!([^*]+)[*]\//g, '$1')
+      .replace(/css_node_t\*/g, 'CSSNode'));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+
+var allTestsInC = allTests.map(printLayout);
+generateFile(__dirname + '/__tests__/Layout-test.c', allTestsInC.join('\n\n'));
+generateFile(__dirname + '/Layout-test-utils.c', makeConstDefs());
+generateFile(__dirname + '/Layout.c', transpileAnnotatedJStoC(computeLayout.toString()));
+generateFile(__dirname + '/java/src/com/facebook/csslayout/LayoutEngine.java', JavaTranspiler.<span class="apidocCodeKeywordSpan
+">transpileLayoutEngine</span>(computeLayout.toString()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/TestConstants.java', JavaTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/java/tests/com/facebook/csslayout/LayoutEngineTest.java', JavaTranspiler.transpileCTestsArray
+(allTestsInC));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout/LayoutEngine.cs', CSharpTranspiler.transpileLayoutEngine(computeLayout
+.toString()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/TestConstants.cs', CSharpTranspiler.transpileCConstDefs(makeConstDefs
+()));
+generateFile(__dirname + '/csharp/Facebook.CSSLayout.Tests/LayoutEngineTest.cs', CSharpTranspiler.transpileCTestsArray
+(allTestsInC));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.css-layout.Layout" id="apidoc.module.css-layout.Layout">module css-layout.Layout</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.Layout.computeLayout" id="apidoc.element.css-layout.Layout.computeLayout">
+        function <span class="apidocSignatureSpan">css-layout.Layout.</span>computeLayout
+        <span class="apidocSignatureSpan">(node, parentMaxWidth, parentDirection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function layoutNode(node, parentMaxWidth, parentDirection) {
+  node.shouldUpdate = true;
+
+  var direction = node.style.direction || CSS_DIRECTION_LTR;
+  var skipLayout =
+    !node.isDirty &amp;&amp;
+    node.lastLayout &amp;&amp;
+    node.lastLayout.requestedHeight === node.layout.height &amp;&amp;
+    node.lastLayout.requestedWidth === node.layout.width &amp;&amp;
+    node.lastLayout.parentMaxWidth === parentMaxWidth &amp;&amp;
+    node.lastLayout.direction === direction;
+
+  if (skipLayout) {
+    node.layout.width = node.lastLayout.width;
+    node.layout.height = node.lastLayout.height;
+    node.layout.top = node.lastLayout.top;
+    node.layout.left = node.lastLayout.left;
+  } else {
+    if (!node.lastLayout) {
+      node.lastLayout = {};
+    }
+
+    node.lastLayout.requestedWidth = node.layout.width;
+    node.lastLayout.requestedHeight = node.layout.height;
+    node.lastLayout.parentMaxWidth = parentMaxWidth;
+    node.lastLayout.direction = direction;
+
+    // Reset child layouts
+    node.children.forEach(function(child) {
+      child.layout.width = undefined;
+      child.layout.height = undefined;
+      child.layout.top = 0;
+      child.layout.left = 0;
+    });
+
+    layoutNodeImpl(node, parentMaxWidth, parentDirection);
+
+    node.lastLayout.width = node.layout.width;
+    node.lastLayout.height = node.layout.height;
+    node.lastLayout.top = node.layout.top;
+    node.lastLayout.left = node.layout.left;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}(this, function() {
+  // @@include('./Layout.js')
+
+  return function(node) {
+    /*eslint-disable */
+    // disabling ESLint because this code relies on the above include
+    computeLayout.fillNodes(node);
+    computeLayout.<span class="apidocCodeKeywordSpan">computeLayout</span>(node);
+    /*eslint-enable */
+  };
+}));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.Layout.fillNodes" id="apidoc.element.css-layout.Layout.fillNodes">
+        function <span class="apidocSignatureSpan">css-layout.Layout.</span>fillNodes
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fillNodes(node) {
+  if (!node.layout || node.isDirty) {
+    node.layout = {
+      width: undefined,
+      height: undefined,
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0
+    };
+  }
+
+  if (!node.style) {
+    node.style = {};
+  }
+
+  if (!node.children) {
+    node.children = [];
+  }
+  node.children.forEach(fillNodes);
+  return node;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+}(this, function() {
+  // @@include('./Layout.js')
+
+  return function(node) {
+    /*eslint-disable */
+    // disabling ESLint because this code relies on the above include
+    computeLayout.<span class="apidocCodeKeywordSpan">fillNodes</span>(node);
+    computeLayout.computeLayout(node);
+    /*eslint-enable */
+  };
+}));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.css-layout.Layout.layoutNodeImpl" id="apidoc.element.css-layout.Layout.layoutNodeImpl">
+        function <span class="apidocSignatureSpan">css-layout.Layout.</span>layoutNodeImpl
+        <span class="apidocSignatureSpan">(node, parentMaxWidth, parentDirection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function layoutNodeImpl(node, parentMaxWidth, parentDirection) {
+  var<span class="apidocCodeCommentSpan">/*css_direction_t*/ direction = resolveDirection(node, parentDirection);
+  var/*(c)!css_flex_direction_t*//*(java)!int*/ mainAxis = resolveAxis(getFlexDirection(node), direction);
+  var/*(c)!css_flex_direction_t*//*(java)!int*/ crossAxis = getCrossFlexDirection(mainAxis, direction);
+  var/*(c)!css_flex_direction_t*//*(java)!int*/ resolvedRowAxis = resolveAxis(CSS_FLEX_DIRECTION_ROW, direction);
+
+  // Handle width and height style attributes
+  setDimensionFromStyle(node, mainAxis);
+  setDimensionFromStyle(node, crossAxis);
+
+  // Set the resolved resolution in the node's layout
+  node.layout.direction = direction;
+
+  // The position is set by the parent, but we need to complete it with a
+  // delta composed of the margin and left/top/right/bottom
+  node.layout[leading[mainAxis]] += getLeadingMargin(node, mainAxis) +
+    getRelativePosition(node, mainAxis);
+  node.layout[trailing[mainAxis]] += getTrailingMargin(node, mainAxis) +
+    getRelativePosition(node, mainAxis);
+  node.layout[leading[crossAxis]] += getLeadingMargin(node, crossAxis) +
+    getRelativePosition(node, crossAxis);
+  node.layout[trailing[crossAxis]] += getTrailingMargin(node, crossAxis) +
+    getRelativePosition(node, crossAxis);
+
+  // Inline immutable values from the target node to avoid excessive method
+  // invocations during the layout calculation.
+  var/*int*/ childCount = node.children.length;
+  var/*float*/ paddingAndBorderAxisResolvedRow = getPaddingAndBorderAxis(node, resolvedRowAxis);
+
+  if (isMeasureDefined(node)) {
+    var/*bool*/ isResolvedRowDimDefined = !isUndefined(node.layout[dim[resolvedRowAxis]]);
+
+    var/*float*/ width = CSS_UNDEFINED;
+    if (isDimDefined(node, resolvedRowAxis)) {
+      width = node.style.width;
+    } else if (isResolvedRowDimDefined) {
+      width = node.layout[dim[resolvedRowAxis]];
+    } else {
+      width = parentMaxWidth -
+        getMarginAxis(node, resolvedRowAxis);
+    }
+    width -= paddingAndBorderAxisResolvedRow;
+
+    // We only need to give a dimension for the text if we haven't got any
+    // for it computed yet. It can either be from the style attribute or because
+    // the element is flexible.
+    var/*bool*/ isRowUndefined = !isDimDefined(node, resolvedRowAxis) &amp;&amp; !isResolvedRowDimDefined;
+    var/*bool*/ isColumnUndefined = !isDimDefined(node, CSS_FLEX_DIRECTION_COLUMN) &amp;&amp;
+      isUndefined(node.layout[dim[CSS_FLEX_DIRECTION_COLUMN]]);
+
+    // Let's not measure the text if we already know both dimensions
+    if (isRowUndefined || isColumnUndefined) {
+      var/*css_dim_t*/ measureDim = node.style.measure(
+        /*(c)!node-&gt;context,*/
+</span>        /*(java)!layoutContext.measureOutput,*/
+        width
+      );
+      if (isRowUndefined) {
+        node.layout.width = measureDim.width +
+          paddingAndBorderAxisResolvedRow;
+      }
+      if (isColumnUndefined) {
+        node.layout.height = measureDim.height +
+          getPaddingAndBorderAxis(node, CSS_FLEX_DIRECTION_COLUMN);
+      }
+    }
+    if (childCount === 0) {
+      return;
+    }
+  }
+
+  var/*bool*/ isNodeFlexWrap = isFlexWrap(node);
+
+  var/*css_justify_t*/ justifyContent = getJustifyContent(node);
+
+  var/*float*/ leadingPaddingAndBorderMain = getLeadingPaddingAndBorder(node, mainAxis);
+  var/*float*/ leadingPaddingAndBorderCross = getLeadingPaddingAndBorder(node, crossAxis);
+  var/*float*/ paddingAndBorderAxisMain = getPaddingAndBorderAxis(node, mainAxis);
+  var/*float*/ paddingAndBorderAxisCross = getPaddingAndBorderAxis(node, crossAxis);
+
+  var/*bool*/ isMainDimDefined = !isUndefined(node.layout[dim[mainAxis]]);
+  var/*bool*/ isCrossDimDefined = !isUndefined(node.layout[dim[crossAxis]]);
+  var/*bool*/ isMainRowDirection = isRowDirection(mainAxis);
+
+  var/*int*/ i;
+  var/*int*/ ii;
+  var/*css_node_t**/ child;
+  var/*(c)!css_flex_direction_t*//*(java)!int*/ axis;
+
+  var/*css_node_t**/ firstAbsoluteChild = null;
+  var/*css_node_t**/ currentAbsoluteChild = null;
+
+  var/*float*/ definedMainDim = CSS_UNDEFINED;
+  if (isMainDimDefined) {
+    definedMainDim = node. ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
